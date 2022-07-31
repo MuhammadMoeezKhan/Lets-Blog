@@ -12,7 +12,7 @@ The functionaity is enchanced through self createed and inner modular export of 
 <br>
 <br>
 
-### Gif#1: Compose a new blog post 
+### Gif#1: Compose a new blog post and View on the home route
 #### Write a new blog post by adding the routing parameter "/compose" to the home route
 <p align="center">
   <img src="http://g.recordit.co/AjhSa3nEST.gif" alt="animated" />
