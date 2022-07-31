@@ -1,0 +1,24 @@
+<!-- Layout to be used on every page of the blog website -->
+<!-- Reduce code redundancy -->
+
+<%- include("partials/header"); -%>
+
+    <h1>Home</h1>
+    <p> <%= startingContent %> </p>
+
+  <!-- Use EJS scriplet tags to code int JavaScript -->
+  <%  posts.forEach(function(post){ %>
+
+    <h1><%=post.title%></h1>
+    
+    <!-- Use EJS tags to trucnate visible text to only a 100 characters -->
+    <p>
+    <%=post.content.substring(0, 100) + " ..."%>
+    <a href="/posts/<%=post._id%>">Read More</a>
+    </p>
+
+
+    <% }) %>
+
+
+<%- include("partials/footer"); -%>
